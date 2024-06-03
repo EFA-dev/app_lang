@@ -1,0 +1,37 @@
+builders:
+
+  # The Import builder is creating the cache directory because it modifies the existing file
+  # It runs before all other builders since the newly created file will be used by them
+  app_lang_importer_builder:
+    import: "package:app_lang/builder.dart"    
+    builder_factories: [ "appLangImportBuilder"]
+    runs_before: [:app_lang_loader_builder, :app_lang_key_builder, :app_lang_json_builder]    
+    build_extensions: {".dart": [".importer.dart"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen"]
+    
+  app_lang_loader_builder:
+    import: "package:app_lang/builder.dart"    
+    builder_factories: [ "appLangLoaderBuilder"]    
+    build_extensions: {".dart": [".loader.dart"]}
+    auto_apply: dependents
+    build_to: source
+    applies_builders: ["source_gen"]
+
+  app_lang_key_builder:
+    import: "package:app_lang/builder.dart"    
+    builder_factories: [ "appLangKeyBuilder"]    
+    build_extensions: {".dart": [".key.dart"]}
+    auto_apply: dependents
+    build_to: source
+    applies_builders: ["source_gen"]
+
+  app_lang_json_builder:
+    import: "package:app_lang/builder.dart"    
+    builder_factories: [ "appLangJsonBuilder"]    
+    build_extensions: {".dart": [".json"]}
+    auto_apply: dependents
+    build_to: source
+    applies_builders: ["source_gen"]
+

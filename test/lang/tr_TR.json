@@ -1,0 +1,25 @@
+{
+  "incomeTransaction": {
+    "fields": {
+      "amount": "Fiyat",
+      "paymentDate": "Ödeme Tarihi"
+    },
+    "actions": {
+      "update": "Düzenle",
+      "detail": "Detay",
+      "addTag": "Etiket Ekle"
+    },
+    "validations": {
+      "amount": {
+        "notNull": "Tutar girmelisiniz",
+        "lessThen": "Tutar 100'den küçük olmalı"
+      }
+    }
+  },
+  "expenseTransaction": {
+    "fields": {
+      "amount": "Fiyat",
+      "paymentDate": "Ödeme Tarihi"
+    }
+  }
+}

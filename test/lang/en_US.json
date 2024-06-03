@@ -1,0 +1,25 @@
+{
+  "incomeTransaction": {
+    "fields": {
+      "amount": "Price",
+      "paymentDate": "Payment Date"
+    },
+    "actions": {
+      "update": "Edit",
+      "detail": "Detail",
+      "addTag": "Add Tag"
+    },
+    "validations": {
+      "amount": {
+        "notNull": "You must enter an amount",
+        "lessThen": "Amount must be less than 100"
+      }
+    }
+  },
+  "expenseTransaction": {
+    "fields": {
+      "amount": "Price",
+      "paymentDate": "Payment Date"
+    }
+  }
+}
