@@ -154,7 +154,7 @@ class AppLangSource {
 ## Remove Existing Locale
 You can remove an existing locale from the sourcefile with `remove` parameter of `AppLangConfig` annotation.
 
-When you remove a config, all files will be generated again.
+When you remove a locale, all files will be generated again.
 
 ```dart
 
