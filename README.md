@@ -99,7 +99,7 @@ class AppLangSource {
 > [!IMPORTANT]
 > - Fields should be a Record
 > - The last node(value node) should contain the locale as a parameter name and value should be a String
->- `zero`, `one`, `two`, `few`, `many`, `other`, `male`, `female` are reserved words. They should be the first parent of the value node node.
+>- `zero`, `one`, `two`, `few`, `many`, `other`, `male`, `female` are reserved words. They should be the first parent of the value node.
 >- If you use one of the reserved words and you are using the easy_localization package, `other` is required
 ****
 <br />
