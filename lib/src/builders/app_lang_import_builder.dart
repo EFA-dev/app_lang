@@ -18,6 +18,11 @@ class AppLangImportBuilder extends GeneratorForAnnotation<AppLangConfig> {
     var importLocale = importFields?.getField("locale")?.toStringValue();
     var path = importFields?.getField("path")?.toStringValue();
 
+    ///* Prevent the builder from running unnecessarily
+    if (exclude == null && importFields == null) {
+      return null;
+    }
+
     Import? import;
     if (exclude == null && importLocale != null && path != null) {
       import = Import(

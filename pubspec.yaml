@@ -1,6 +1,6 @@
 name: app_lang
 description: Application language management package
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/EFA-dev/app_lang
 
 environment:
