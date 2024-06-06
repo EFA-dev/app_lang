@@ -1,5 +1,4 @@
-<img src="https://raw.githubusercontent.com/EFA-dev/app_lang/main/assets/app_lang.png" height="320">
-<br /><br />
+[<img src="https://raw.githubusercontent.com/EFA-dev/app_lang/main/assets/app_lang_cover.png"  height="320">](https://www.youtube.com/watch?v=c3G9xEA4PQg)
 
 A build_runner package for managing app language files.
 
