@@ -11,7 +11,6 @@ This package helps you to manage your app's language files in a single Dart file
 5. Import new locale from a JSON file
 6. Remove a locale from the source file
 7. Continuously generate files with the watch command
-8. Watch the source file and generate files automatically
 
 <br /> 
  
