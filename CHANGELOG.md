@@ -1,3 +1,7 @@
+
+## 1.0.3
+- Remove unnecessary escape character replacements
+
 ## 1.0.2
 - Add demo video to README
 

@@ -21,7 +21,7 @@ class CustomEmitter extends DartEmitter {
   @override
   StringSink visitLiteralExpression(LiteralExpression expression, [StringSink? output]) {
     output ??= StringBuffer();
-    final escaped = expression.literal.replaceAll('\\\'', '\'').replaceAll('\\n', '\n');
+    final escaped = expression.literal;
 
     if (escaped.startsWith("'") && escaped.endsWith("'")) {
       return output..write('"${escaped.substring(1, escaped.length - 1)}"');
